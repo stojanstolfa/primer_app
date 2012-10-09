@@ -1,14 +1,25 @@
-class PagesController < ApplicationController
+require 'spec_helper'
 
-  def home
-    @title = "Home"
-      end
+describe PagesController do
 
-  def contact
-    @title= "Contact"
+  describe "GET 'home'" do
+    it "should be successful" do
+      get 'home'
+      response.should be_success
+    end
   end
 
-  def about
-    @title= "About"
+  describe "GET 'contact'" do
+    it "should be successful" do
+      get 'contact'
+      response.should be_success
+    end
+  end
+
+  describe "GET 'about'" do
+    it "should be successful" do
+      get 'about'
+      response.should be_success
+    end
   end
 end
