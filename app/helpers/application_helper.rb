@@ -1,6 +1,6 @@
 module ApplicationHelper
 
-  # Vrni naslov glede na vsebino strani
+  # Vrne naslov glede na vsebino strani
   def title
     base_title = "RoR Tutorial sample app"
     if @title.nil?
